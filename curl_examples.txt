@@ -1,0 +1,58 @@
+cURL examples:
+--------------
+
+GET /ping
+
+curl --location --request GET 'https://book.trevlix.com/api/v1/ping/' \
+--header 'Authorization: Basic YOUR-ENCODED-AUTHENTICATION-DATA='
+
+GET /property
+
+curl --location --request GET 'https://book.trevlix.com/api/v1/property/' \
+--header 'Authorization: Basic YOUR-ENCODED-AUTHENTICATION-DATA='
+
+GET /room-types
+
+curl --location --request GET 'https://book.trevlix.com/api/v1/room-types/' \
+--header 'Authorization: Basic YOUR-ENCODED-AUTHENTICATION-DATA='
+
+GET /account
+
+curl --location --request GET 'https://book.trevlix.com/api/v1/account/' \
+--header 'Authorization: Basic YOUR-ENCODED-AUTHENTICATION-DATA='
+
+GET /availability-all
+
+curl --location --request GET 'https://book.trevlix.com/api/v1/availability-all/?dateFrom=2021-10-14&dateTo=2021-10-15' \
+--header 'Authorization: Basic YOUR-ENCODED-AUTHENTICATION-DATA='
+
+GET /availability
+
+curl --location --request GET 'https://book.trevlix.com/api/v1/availability/?dateFrom=2021-09-14&dateTo=2021-09-16&idRoomType=1' \
+--header 'Authorization: Basic YOUR-ENCODED-AUTHENTICATION-DATA='
+
+GET /bookings
+
+curl --location --request GET 'https://book.trevlix.com/api/v1/bookings/?dateFrom=2021-10-10&dateTo=2021-10-19&idRoomType=2' \
+--header 'Authorization: Basic YOUR-ENCODED-AUTHENTICATION-DATA='
+
+GET /bookings-latest
+
+curl --location --request GET 'https://book.trevlix.com/api/v1/bookings-latest/?days=3' \
+--header 'Authorization: Basic YOUR-ENCODED-AUTHENTICATION-DATA='
+
+POST /booking-create
+
+curl --location --request POST 'https://book.trevlix.com/api/v1/booking-create/' \
+--header 'Authorization: Basic YOUR-ENCODED-AUTHENTICATION-DATA=' \
+--form 'dateFrom="2021-12-01"' \
+--form 'dateTo="2021-12-02"' \
+--form 'idRoomType="2"' \
+--form 'name="John Newman"' \
+--form 'email="tester@test.cz"'
+
+POST /booking-cancel
+
+curl --location --request POST 'https://book.trevlix.com/api/v1/booking-cancel/' \
+--header 'Authorization: Basic YOUR-ENCODED-AUTHENTICATION-DATA=' \
+--form 'id="58"'
