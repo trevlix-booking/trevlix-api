@@ -16,5 +16,6 @@ cURL library is supported in more than 50 programming languages.
 * run the index.php file
 * index.php file contains links to all sample APIs
 
-### Used libraries
+### Used libraries and recommended applications
 * in the lib/ directory you will find a simple REST API client: Httpful http://phphttpclient.com/
+* you can use the popular Postman application for API testing https://www.postman.com/downloads/
