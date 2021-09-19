@@ -4,7 +4,7 @@ Simple minimalist PHP examples how to use the Trevlix API.
 ### API documentation
 * https://app.swaggerhub.com/apis-docs/trevlix/trevlix/0.3.0
 
-### cURL alternative examples
+### Alternative cURL examples
 If you do not use PHP, you can find universal examples for cURL in the curl_examples.txt file.  
 cURL library is supported in more than 50 programming languages.
 
