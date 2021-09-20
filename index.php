@@ -8,17 +8,16 @@ include $path.'template/head.php';
 
   <p>Please enter your username and password in the config.php file before testing the API.</p>
 
-  <h3>Tests</h3>
+  <h3>Info</h3>
   <ul>
     <li><a href="example/ping.php">GET /ping</a>
+    <li><a href="example/account.php">GET /account</a>
   </ul>
 
   <h3>Property</h3>
   <ul>
     <li><a href="example/property.php">GET /property</a>
     <li><a href="example/room-types.php">GET /room-types</a>
-    <li><a href="example/account.php">GET /account</a>
-
   </ul>
 
   <h3>Availability</h3>
