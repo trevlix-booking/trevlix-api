@@ -14,9 +14,16 @@ $body = array(
     'idRoomType' => 1,
     'dateFrom' => $dateFrom->format('Y-m-d'),
     'dateTo' => $dateTo->format('Y-m-d'),
+    'timeArrival' => '16:30',
     'name' => 'John Newman',
     'email' => 'john.newman@mydomain.com',
     'phone' => '(+420) 777 123 456',
+    'price' => 230.5,
+    'currency' => 'EUR',
+    'voucher' => 'DSCNT-20',
+    'numberOfGuests' => 3,
+    'numberOfChildren' => 1,
+    'numberOfAdults' => 2,
 );
 
 echo "<h1>POST booking-create</h1>";
