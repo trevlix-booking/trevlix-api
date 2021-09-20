@@ -2,9 +2,9 @@
 $path = './';
 include $path.'template/head.php';
 ?>
-  
+
   <h1>Trevlix API demo</h1>
-	<p>API DOC: <a href="https://app.swaggerhub.com/apis-docs/trevlix/trevlix/0.3.0" target="_blank">https://app.swaggerhub.com/apis-docs/trevlix/trevlix/0.3.0</a></p>
+  <p>API DOC: <a href="https://app.swaggerhub.com/apis-docs/trevlix/trevlix/0.3.0" target="_blank">https://app.swaggerhub.com/apis-docs/trevlix/trevlix/0.3.0</a></p>
 
   <p>Please enter your username and password in the config.php file before testing the API.</p>
 
