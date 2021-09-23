@@ -1,5 +1,5 @@
 # Trevlix API
-Simple minimalist PHP examples how to use the Trevlix API.
+Simple minimalist PHP examples how to use the Trevlix REST API (JSON).
 
 ### API documentation
 * https://app.swaggerhub.com/apis-docs/trevlix/trevlix/0.3.0
