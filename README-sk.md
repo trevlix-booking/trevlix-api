@@ -2,7 +2,7 @@
 Jednoduché minimalistické príklady PHP, ako používať Trevlix REST API (JSON).
 
 ### :information_source: API dokumentácia 
-* https://app.swaggerhub.com/apis-docs/trevlix/trevlix/0.3.0
+* https://app.swaggerhub.com/apis-docs/trevlix/trevlix/0.4.0
 
 ### :round_pushpin: Alternatívne príklady cURL
 Ak nepoužívate PHP, nájdete univerzálne príklady pre cURL v súbore curl_examples.txt.
