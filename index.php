@@ -32,6 +32,7 @@ include $path.'template/head.php';
     <li><a href="example/bookings-latest.php">GET /bookings-latest</a>
     <li><a href="example/booking-create.php">POST /booking-create</a>
     <li><a href="example/booking-cancel.php">POST /booking-cancel</a>
+	  <li><a href="example/booking.php">GET /booking</a>
   </ul>
 
 </body>
