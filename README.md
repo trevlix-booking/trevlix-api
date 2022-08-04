@@ -9,7 +9,8 @@ If you prefer Python, you can find examples here:
 https://github.com/trevlix-booking/trevlix-api-python
 
 ### :round_pushpin: Alternative cURL examples
-If you do not use PHP, you can find universal examples for cURL in the curl_examples.txt file.  
+If you do not use PHP or Pythen, you can find universal examples for cURL here:
+https://github.com/trevlix-booking/trevlix-api/blob/main/curl_examples.txt
 cURL library is supported in more than 50 programming languages.
 
 ## :point_down: Installation 
