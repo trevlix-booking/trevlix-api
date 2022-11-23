@@ -2,7 +2,7 @@
 Jednoduché minimalistické příklady PHP, jak používat Trevlix REST API (JSON).
 
 ### :information_source: API dokumentace 
-* https://app.swaggerhub.com/apis-docs/trevlix/trevlix/0.4.0
+* https://app.swaggerhub.com/apis-docs/trevlix/trevlix/0.4.1
 
 ### :round_pushpin: Alternativní příklady Python
 Pokud preferujete Python, najdete příklady zde:
