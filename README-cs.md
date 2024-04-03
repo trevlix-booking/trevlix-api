@@ -24,3 +24,4 @@ Knihovna cURL je podporována ve více než 50 programovacích jazycích.
 ### :pray: Použité knihovny a doporučené aplikace
 * v adresáři lib/ najdete jednoduchého REST API klienta: Httpful http://phphttpclient.com/
 * pro testování API můžete použít oblíbenou aplikaci Postman https://www.postman.com/downloads/
+* připravenou Postman kolekci Trevlix API endpointů najdete zde: https://github.com/trevlix-booking/trevlix-api/blob/main/doc/postman_collection.json
