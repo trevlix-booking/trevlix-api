@@ -1,0 +1,583 @@
+{
+	"info": {
+		"_postman_id": "aa6af3f6-7c25-4a4b-a42f-544c808435df",
+		"name": "Trevlix",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13393750"
+	},
+	"item": [
+		{
+			"name": "ping/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}ping/",
+					"host": [
+						"{{api_url}}ping"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "account/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}account/",
+					"host": [
+						"{{api_url}}account"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "property/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}property/",
+					"host": [
+						"{{api_url}}property"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "room-types/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}room-types/",
+					"host": [
+						"{{api_url}}room-types"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rooms/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}room-types/",
+					"host": [
+						"{{api_url}}room-types"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "availability-all/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dateFrom",
+							"value": "2024-05-01",
+							"type": "default"
+						},
+						{
+							"key": "dateTo",
+							"value": "2024-05-05",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}availability-all/",
+					"host": [
+						"{{api_url}}availability-all"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "availability/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dateFrom",
+							"value": "2024-05-01",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "dateTo",
+							"value": "2024-05-05",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "idRoomType",
+							"value": "1",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}availability/?idRoomType=1&dateFrom=2024-05-01&dateTo=2024-05-05",
+					"host": [
+						"{{api_url}}availability"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "idRoomType",
+							"value": "1"
+						},
+						{
+							"key": "dateFrom",
+							"value": "2024-05-01"
+						},
+						{
+							"key": "dateTo",
+							"value": "2024-05-05"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "booking/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}booking/?id=3",
+					"host": [
+						"{{api_url}}booking"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bookings/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}bookings/?dateFrom=2024-05-01&dateTo=2024-06-01",
+					"host": [
+						"{{api_url}}bookings"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "dateFrom",
+							"value": "2024-05-01"
+						},
+						{
+							"key": "dateTo",
+							"value": "2024-06-01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bookings-latest/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}bookings-latest/?days=3",
+					"host": [
+						"{{api_url}}bookings-latest"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "days",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "booking-create/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idRoomType",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "dateFrom",
+							"value": "2024-05-07",
+							"type": "text"
+						},
+						{
+							"key": "dateTo",
+							"value": "2024-05-09",
+							"type": "default"
+						},
+						{
+							"key": "name",
+							"value": "John Newman",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "john.newman@mydomain.tld",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "195",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "EUR",
+							"type": "text"
+						},
+						{
+							"key": "numberOfGuests",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "numberOfChildren",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "numberOfAdults",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "note",
+							"value": "Test reservation",
+							"type": "text"
+						},
+						{
+							"key": "discountCoupon",
+							"value": "ABC123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}booking-create/",
+					"host": [
+						"{{api_url}}booking-create"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "booking-cancel/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "72",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}booking-cancel/",
+					"host": [
+						"{{api_url}}booking-cancel"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api_url",
+			"value": "https://book.trevlix.com/api/v1/"
+		},
+		{
+			"key": "username",
+			"value": "123456789",
+			"type": "string"
+		},
+		{
+			"key": "password",
+			"value": "enter-your-password"
+		}
+	]
+}
