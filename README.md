@@ -24,4 +24,6 @@ cURL library is supported in more than 50 programming languages.
 ### :pray: Used libraries and recommended applications 
 * in the lib/ directory you will find a simple REST API client: Httpful http://phphttpclient.com/
 * you can use the popular Postman application for API testing https://www.postman.com/downloads/
+* you can find a ready Postman collection of Trevlix API endpoints here: https://github.com/trevlix-booking/trevlix-api/blob/main/doc/postman_collection.json
+  
 
