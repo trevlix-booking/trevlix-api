@@ -501,6 +501,103 @@
 			"response": []
 		},
 		{
+			"name": "booking-status-update/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idRoomType",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "dateFrom",
+							"value": "2024-05-07",
+							"type": "text"
+						},
+						{
+							"key": "dateTo",
+							"value": "2024-05-09",
+							"type": "default"
+						},
+						{
+							"key": "name",
+							"value": "John Newman",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "john.newman@mydomain.tld",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "195",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "EUR",
+							"type": "text"
+						},
+						{
+							"key": "numberOfGuests",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "numberOfChildren",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "numberOfAdults",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "note",
+							"value": "Test reservation",
+							"type": "text"
+						},
+						{
+							"key": "discountCoupon",
+							"value": "ABC123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}booking-create/",
+					"host": [
+						"{{api_url}}booking-create"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "booking-cancel/",
 			"request": {
 				"auth": {
@@ -577,7 +674,8 @@
 		},
 		{
 			"key": "password",
-			"value": "enter-your-password"
+			"value": "enter-your-password",
+			"type": "string"
 		}
 	]
 }
