@@ -168,6 +168,9 @@
 		},
 		{
 			"name": "availability-all/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -184,19 +187,19 @@
 						}
 					]
 				},
-				"method": "POST",
+				"method": "GET",
 				"header": [],
 				"body": {
 					"mode": "formdata",
 					"formdata": [
 						{
 							"key": "dateFrom",
-							"value": "2024-05-01",
+							"value": "2024-10-01",
 							"type": "default"
 						},
 						{
 							"key": "dateTo",
-							"value": "2024-05-05",
+							"value": "2024-10-05",
 							"type": "default"
 						}
 					]
@@ -215,6 +218,9 @@
 		},
 		{
 			"name": "availability-rooms-all/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -231,19 +237,19 @@
 						}
 					]
 				},
-				"method": "POST",
+				"method": "GET",
 				"header": [],
 				"body": {
 					"mode": "formdata",
 					"formdata": [
 						{
 							"key": "dateFrom",
-							"value": "2024-05-01",
+							"value": "2024-12-08",
 							"type": "default"
 						},
 						{
 							"key": "dateTo",
-							"value": "2024-05-05",
+							"value": "2024-12-15",
 							"type": "default"
 						}
 					]
@@ -332,6 +338,59 @@
 			},
 			"response": []
 		},
+		{
+			"name": "availability-room/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{api_url}}availability-room/?idRoom=1&dateFrom=2024-12-01&dateTo=2024-12-18",
+					"host": [
+						"{{api_url}}availability-room"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "idRoom",
+							"value": "1"
+						},
+						{
+							"key": "dateFrom",
+							"value": "2024-12-01"
+						},
+						{
+							"key": "dateTo",
+							"value": "2024-12-18"
+						}
+					]
+				}
+			},
+			"response": []
+		},        
 		{
 			"name": "booking/",
 			"request": {
