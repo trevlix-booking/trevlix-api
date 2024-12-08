@@ -214,6 +214,53 @@
 			"response": []
 		},
 		{
+			"name": "availability-rooms-all/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dateFrom",
+							"value": "2024-05-01",
+							"type": "default"
+						},
+						{
+							"key": "dateTo",
+							"value": "2024-05-05",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api_url}}availability-rooms-all/",
+					"host": [
+						"{{api_url}}availability-rooms-all"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "availability/",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
